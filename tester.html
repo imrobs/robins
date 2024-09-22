@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover XSS Example</title>
+    <title>Image Click XSS Example</title>
 </head>
 <body>
-    <h1>Hover over the text below:</h1>
-    <a href="#" onmouseover="alert('XSS Triggered!')">helloworld</a>
+    <h1>Click the image below:</h1>
+    <img src="https://via.placeholder.com/150" alt="Click Me" onclick="alert('XSS Triggered!')" style="cursor:pointer;">
 </body>
 </html>
